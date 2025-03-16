@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPzXbsPoJyID2qV66xr2lgl",
+      "authorship_tag": "ABX9TyNPeBONMw7FchNq5KAmjP06",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -231,45 +231,6 @@
           "name": "stdout",
           "text": [
             "Writing app.py\n"
-          ]
-        }
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "from pyngrok import ngrok\n",
-        "\n",
-        "# Set up the Streamlit process\n",
-        "!streamlit run app.py &\n",
-        "\n",
-        "# Set up ngrok tunnel\n",
-        "public_url = ngrok.connect(port='8501')\n",
-        "public_url\n"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "UuFsR_NrBJnk",
-        "outputId": "9296d282-164f-4bbe-8229-49ed1e63038c"
-      },
-      "execution_count": null,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "\n",
-            "Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.\n",
-            "\u001b[0m\n",
-            "\u001b[0m\n",
-            "\u001b[34m\u001b[1m  You can now view your Streamlit app in your browser.\u001b[0m\n",
-            "\u001b[0m\n",
-            "\u001b[34m  Local URL: \u001b[0m\u001b[1mhttp://localhost:8501\u001b[0m\n",
-            "\u001b[34m  Network URL: \u001b[0m\u001b[1mhttp://172.28.0.12:8501\u001b[0m\n",
-            "\u001b[34m  External URL: \u001b[0m\u001b[1mhttp://34.138.88.136:8501\u001b[0m\n",
-            "\u001b[0m\n"
           ]
         }
       ]
